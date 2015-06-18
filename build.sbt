@@ -22,5 +22,3 @@ libraryDependencies ++= Seq(
 resolvers += "Nexus Repository" at "http://101.251.236.34:8081/nexus/content/groups/scalasbt/"
 
 externalResolvers := Resolver.withDefaultResolvers(resolvers.value, mavenCentral = false)
-
-//fesffsefs
