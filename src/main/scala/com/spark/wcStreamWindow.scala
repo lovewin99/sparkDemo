@@ -13,11 +13,11 @@ object wcStreamWindow {
 
   def main(args: Array[String]) :Unit={
     if(args.length != 5){
-      System.err.println("Usage: <host> <port> <tm1> <tm2> <tm4>")
+      System.err.println("Usage: <host> <port> <dir> <tm1> <tm2> <tm4>")
       System.exit(1)
     }
 
-    val Array(host, port, tm1, tm2, tm3) = args
+    val Array(host, port, dir, tm1, tm2, tm3) = args
 
     val conf = new SparkConf()
     conf.setMaster("spark://cloud38:7077")
@@ -26,7 +26,7 @@ object wcStreamWindow {
       .setJars(List(SparkContext.jarOfClass(this.getClass).getOrElse("")))
 
     val ssc = new StreamingContext(conf,Seconds(tm1.toInt))
-    ssc.checkpoint("/Users/wq/spark")
+    ssc.checkpoint(dir)
 
     val lines = ssc.socketTextStream(host, port.toInt, StorageLevel.MEMORY_ONLY_SER)
     val words = lines.flatMap(_.split(" "))
