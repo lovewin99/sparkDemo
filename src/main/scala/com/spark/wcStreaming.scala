@@ -39,9 +39,7 @@ object wcStreaming {
 //    val serverIP = args(0)
 //    val serverPort = args(1).toInt
 
-    val dir = args(0)
-    val out = args(1)
-    val ck = args(2)
+    val Array(dir, out, ck) = args
 
     val conf = new SparkConf()
     conf.setMaster("spark://cloud38:7077")
