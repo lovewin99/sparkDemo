@@ -45,8 +45,6 @@ object wcStreaming {
     conf.setMaster("spark://cloud38:7077")
       .setAppName("wcStreaming")
       .set("spark.executor.memory","1g")
-      .setSparkHome("/Users/wq/opt/spark-1.0.1-bin-hadoop2")
-      //.setSparkHome("/Users/wq/opt/spark-1.0.0-bin-hadoop2")
       .setJars(List(SparkContext.jarOfClass(this.getClass).getOrElse("")))
 
     val ssc = new StreamingContext(conf, Seconds(1))
