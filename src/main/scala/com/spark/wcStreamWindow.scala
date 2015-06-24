@@ -12,7 +12,7 @@ import org.apache.spark.SparkContext._
 object wcStreamWindow {
 
   def main(args: Array[String]) :Unit={
-    if(args.length != 5){
+    if(args.length != 6){
       System.err.println("Usage: <host> <port> <dir> <tm1> <tm2> <tm4>")
       System.exit(1)
     }
@@ -20,7 +20,7 @@ object wcStreamWindow {
     val Array(host, port, dir, tm1, tm2, tm3) = args
 
     val conf = new SparkConf()
-    conf.setMaster("spark://cloud38:7077")
+    conf.setMaster("spark://gd1:7077")
       .setAppName("wcStreaming")
       .set("spark.executor.memory","1g")
       .setJars(List(SparkContext.jarOfClass(this.getClass).getOrElse("")))

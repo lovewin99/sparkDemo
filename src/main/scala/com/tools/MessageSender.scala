@@ -8,8 +8,7 @@ import java.io.PrintWriter
 /**
  * Created by wangxy on 15-6-19.
  */
-class MessageSender {
-
+object MessageSender {
   def gen(index: Int): String = {
     val charList = ListBuffer[Char]()
     for(i <- 65 to 90) {
@@ -49,5 +48,4 @@ class MessageSender {
       }.start()
     }
   }
-
 }
