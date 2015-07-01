@@ -110,6 +110,8 @@
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/set13$$anonfun$1.class[0m
 [0m[[0mdebug[0m] [0m	com/mllib/test1$.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/mllib/test1$.class[0m
+[0m[[0mdebug[0m] [0m	com/spark/mConsumer.class[0m
+[0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/mConsumer.class[0m
 [0m[[0mdebug[0m] [0m	com/scalacode/Item.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/Item.class[0m
 [0m[[0mdebug[0m] [0m	com/scalacode/tra.class[0m
@@ -144,6 +146,8 @@
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/function12.class[0m
 [0m[[0mdebug[0m] [0m	com/spark/com/test/Consumer$$anonfun$main$1$$anonfun$4.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/com/test/Consumer$$anonfun$main$1$$anonfun$4.class[0m
+[0m[[0mdebug[0m] [0m	com/spark/mConsumer$.class[0m
+[0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/mConsumer$.class[0m
 [0m[[0mdebug[0m] [0m	com/spark/com/test/Consumer$$anonfun$1.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/com/test/Consumer$$anonfun$1.class[0m
 [0m[[0mdebug[0m] [0m	com/scalacode/tArgFun$$anonfun$mulby$1.class[0m
@@ -156,8 +160,6 @@
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/ant.class[0m
 [0m[[0mdebug[0m] [0m	com/mllib/sparkInstance.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/mllib/sparkInstance.class[0m
-[0m[[0mdebug[0m] [0m	com/test/test1$$anonfun$main$1.class[0m
-[0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/test/test1$$anonfun$main$1.class[0m
 [0m[[0mdebug[0m] [0m	com/spark/wcStreamWindow$$anonfun$3.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/wcStreamWindow$$anonfun$3.class[0m
 [0m[[0mdebug[0m] [0m	com/scalacode/annotation$.class[0m
@@ -284,12 +286,16 @@
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/Network.class[0m
 [0m[[0mdebug[0m] [0m	com/scalacode/function12$$anonfun$1.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/function12$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	com/spark/mConsumer$$anonfun$main$1.class[0m
+[0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/mConsumer$$anonfun$main$1.class[0m
 [0m[[0mdebug[0m] [0m	com/scalacode/function12$$anonfun$3.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/function12$$anonfun$3.class[0m
 [0m[[0mdebug[0m] [0m	com/mllib/sparkInstance$.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/mllib/sparkInstance$.class[0m
 [0m[[0mdebug[0m] [0m	com/scalacode/tools1$$anonfun$1.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/tools1$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	com/spark/mConsumer$$anonfun$main$1$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/mConsumer$$anonfun$main$1$$anonfun$1.class[0m
 [0m[[0mdebug[0m] [0m	com/scalacode/blue$.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/blue$.class[0m
 [0m[[0mdebug[0m] [0m	com/mllib[0m

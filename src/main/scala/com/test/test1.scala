@@ -1,6 +1,7 @@
 package com.test
 
-import java.util.HashMap
+import java.text.SimpleDateFormat
+import java.util.{Calendar, HashMap}
 
 import scala.collection.JavaConversions.mapAsScalaMap
 import scala.collection.mutable.Map
@@ -10,14 +11,30 @@ import scala.collection.mutable._
  * Created by wangxy on 15-5-22.
  */
 object test1 {
+
+  def timename() : String = {
+    val today = Calendar.getInstance().getTime()
+    val time1 = new SimpleDateFormat("yyyyMMddHHmm")
+    val time2 = new SimpleDateFormat("ss")
+    var nss = time2.format(today).toInt
+    val yu = nss % 20
+    nss = nss - yu
+    if(nss == 0)
+      time1.format(today) + "00"
+    else
+      time1.format(today) + nss.toString
+  }
+
   def main(args: Array[String]): Unit ={
 
-    val str1 = "fesfsefes,fesfsefs,fesfsefs"
-    strCut(str1).foreach(println)
-
-    makestr
-    mkList
-    myMap
+//    val str1 = "fesfsefes,fesfsefs,fesfsefs"
+//    strCut(str1).foreach(println)
+//
+//    makestr
+//    mkList
+//    myMap
+    val stime = timename()
+    println("stime="+stime)
   }
 
   def myMap:Unit={
