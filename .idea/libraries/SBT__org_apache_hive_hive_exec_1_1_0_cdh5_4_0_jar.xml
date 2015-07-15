@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="SBT: org.apache.hive:hive-exec:1.1.0-cdh5.4.0:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.hive/hive-exec/jars/hive-exec-1.1.0-cdh5.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.hive/hive-exec/docs/hive-exec-1.1.0-cdh5.4.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.hive/hive-exec/srcs/hive-exec-1.1.0-cdh5.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
