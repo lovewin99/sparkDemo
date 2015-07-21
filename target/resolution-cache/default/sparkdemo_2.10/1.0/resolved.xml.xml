@@ -4,7 +4,7 @@
 		module="sparkdemo_2.10"
 		revision="1.0"
 		status="integration"
-		publication="20150715172823"
+		publication="20150721092323"
 	>
 		<description>
 		sparkDemo
@@ -45,5 +45,6 @@
 		<dependency org="org.apache.hadoop" name="hadoop-yarn-api" rev="2.6.0" conf="compile->default(compile)"/>
 		<dependency org="org.apache.hadoop" name="hadoop-mapreduce-client-core" rev="2.6.0" conf="compile->default(compile)"/>
 		<dependency org="org.apache.hadoop" name="hadoop-mapreduce-client-jobclient" rev="2.6.0" conf="compile->default(compile)"/>
+		<dependency org="org.json" name="json" rev="20090211" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

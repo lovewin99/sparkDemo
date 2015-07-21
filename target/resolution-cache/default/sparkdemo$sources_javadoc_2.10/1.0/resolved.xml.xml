@@ -4,7 +4,7 @@
 		module="sparkdemo$sources_javadoc_2.10"
 		revision="1.0"
 		status="integration"
-		publication="20150716090837"
+		publication="20150721092356"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
@@ -491,11 +491,6 @@
 		</dependency>
 		<dependency org="org.apache.ant" name="ant-launcher" rev="1.9.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="ant-launcher" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-			<artifact name="ant-launcher" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
-		</dependency>
-		<dependency org="org.apache.velocity" name="velocity" rev="1.5" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
-			<artifact name="velocity" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-			<artifact name="velocity" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
 		<dependency org="org.apache.hive" name="hive-metastore" rev="1.1.0-cdh5.4.0" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="hive-metastore" type="src" ext="jar" conf="sources" e:classifier="sources"/>
@@ -511,7 +506,6 @@
 		</dependency>
 		<dependency org="org.apache.hive" name="hive-shims" rev="1.1.0-cdh5.4.0" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="hive-shims" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-			<artifact name="hive-shims" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
 		<dependency org="org.apache.hive.shims" name="hive-shims-common" rev="1.1.0-cdh5.4.0" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="hive-shims-common" type="src" ext="jar" conf="sources" e:classifier="sources"/>
@@ -522,11 +516,9 @@
 			<artifact name="commons-logging" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
 		<dependency org="log4j" name="apache-log4j-extras" rev="1.2.17" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
-			<artifact name="apache-log4j-extras" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="apache-log4j-extras" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
 		<dependency org="org.apache.thrift" name="libthrift" rev="0.9.2" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
-			<artifact name="libthrift" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="libthrift" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
 		<dependency org="org.apache.httpcomponents" name="httpclient" rev="4.2.5" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
@@ -608,10 +600,6 @@
 			<artifact name="bonecp" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="bonecp" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
-		<dependency org="org.apache.derby" name="derby" rev="10.11.1.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
-			<artifact name="derby" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-			<artifact name="derby" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
-		</dependency>
 		<dependency org="org.datanucleus" name="datanucleus-api-jdo" rev="3.2.6" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="datanucleus-api-jdo" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="datanucleus-api-jdo" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
@@ -634,7 +622,6 @@
 		</dependency>
 		<dependency org="javax.transaction" name="jta" rev="1.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="jta" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-			<artifact name="jta" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
 		<dependency org="org.antlr" name="antlr-runtime" rev="3.4" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="antlr-runtime" type="src" ext="jar" conf="sources" e:classifier="sources"/>
@@ -642,27 +629,10 @@
 		</dependency>
 		<dependency org="org.antlr" name="stringtemplate" rev="3.2.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="stringtemplate" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-			<artifact name="stringtemplate" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
-		</dependency>
-		<dependency org="antlr" name="antlr" rev="2.7.7" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
-			<artifact name="antlr" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-			<artifact name="antlr" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
-		</dependency>
-		<dependency org="org.apache.thrift" name="libfb303" rev="0.9.2" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
-			<artifact name="libfb303" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-			<artifact name="libfb303" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
-		</dependency>
-		<dependency org="org.cloudera.logredactor" name="logredactor" rev="1.0.2" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
-			<artifact name="logredactor" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-			<artifact name="logredactor" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
 		<dependency org="org.antlr" name="ST4" rev="4.0.4" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="ST4" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="ST4" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
-		</dependency>
-		<dependency org="org.apache.curator" name="apache-curator" rev="2.6.0" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
-			<artifact name="apache-curator" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-			<artifact name="apache-curator" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
 		<dependency org="com.google.guava" name="guava" rev="16.0.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="guava" type="src" ext="jar" conf="sources" e:classifier="sources"/>
@@ -680,10 +650,6 @@
 			<artifact name="calcite-avatica" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="calcite-avatica" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
-		<dependency org="eigenbase" name="eigenbase-properties" rev="1.1.4" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
-			<artifact name="eigenbase-properties" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-			<artifact name="eigenbase-properties" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
-		</dependency>
 		<dependency org="org.codehaus.janino" name="janino" rev="2.7.6" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="janino" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="janino" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
@@ -695,10 +661,6 @@
 		<dependency org="org.apache.calcite" name="calcite-linq4j" rev="1.0.0-incubating" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="calcite-linq4j" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 			<artifact name="calcite-linq4j" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
-		</dependency>
-		<dependency org="org.pentaho" name="pentaho-aggdesigner-algorithm" rev="5.1.5-jhyde" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
-			<artifact name="pentaho-aggdesigner-algorithm" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-			<artifact name="pentaho-aggdesigner-algorithm" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 		</dependency>
 		<dependency org="jline" name="jline" rev="2.12" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="jline" type="src" ext="jar" conf="sources" e:classifier="sources"/>

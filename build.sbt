@@ -20,7 +20,9 @@ libraryDependencies ++= Seq(
   "org.apache.hive" % "hive-exec" % "1.1.0-cdh5.4.0",
   "org.apache.hadoop" % "hadoop-yarn-api" % "2.6.0",
   "org.apache.hadoop" % "hadoop-mapreduce-client-core" % "2.6.0",
-  "org.apache.hadoop" % "hadoop-mapreduce-client-jobclient" % "2.6.0"
+  "org.apache.hadoop" % "hadoop-mapreduce-client-jobclient" % "2.6.0",
+  "org.json" % "json" % "20090211"
+//  "net.liftweb" % "lift-util_2.9.2" % "2.6.2"
 )
 
 resolvers += "Nexus Repository" at "http://101.251.236.34:8081/nexus/content/groups/scalasbt/"

@@ -7,8 +7,20 @@
 		revision="1.0"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20150715172823"/>
+		date="20150721092323"/>
 	<dependencies>
+		<module organisation="org.json" name="json">
+			<revision name="20090211" status="release" pubdate="20090227023142" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.json.org/java/index.html" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="192">
+				<license name="provided without support or warranty" url="http://www.json.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2937" time="0" location="/home/wangxy/.ivy2/cache/org.json/json/ivy-20090211.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/json/json/20090211/json-20090211.pom"/>
+				<caller organisation="default" name="sparkdemo_2.10" conf="compile, runtime" rev="20090211" rev-constraint-default="20090211" rev-constraint-dynamic="20090211" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="json" type="jar" ext="jar" status="no" details="" size="45944" time="0" location="/home/wangxy/.ivy2/cache/org.json/json/jars/json-20090211.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/json/json/20090211/json-20090211.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="org.mortbay.jetty" name="jetty">
 			<revision name="6.1.26.cloudera.2" status="release" pubdate="20120901020706" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="190">
 				<metadata-artifact status="no" details="" size="7377" time="0" location="/home/wangxy/.ivy2/cache/org.mortbay.jetty/jetty/ivy-6.1.26.cloudera.2.xml" searched="false" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/mortbay/jetty/jetty/6.1.26.cloudera.2/jetty-6.1.26.cloudera.2.pom"/>
@@ -687,7 +699,7 @@
 				</artifacts>
 			</revision>
 			<revision name="2.2.0" status="release" pubdate="20131007143526" resolver="Nexus Repository" artresolver="Nexus Repository" evicted="latest-revision" evicted-reason="" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="-1">
-				<metadata-artifact status="successful" details="" size="3534" time="26" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-yarn-server-common/ivy-2.2.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-yarn-server-common/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://101.251.236.34:8081/nexus/content/groups/scalasbt/org/apache/hadoop/hadoop-yarn-server-common/2.2.0/hadoop-yarn-server-common-2.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="3534" time="257" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-yarn-server-common/ivy-2.2.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-yarn-server-common/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://101.251.236.34:8081/nexus/content/groups/scalasbt/org/apache/hadoop/hadoop-yarn-server-common/2.2.0/hadoop-yarn-server-common-2.2.0.pom"/>
 				<evicted-by rev="2.6.0"/>
 				<caller organisation="org.apache.hadoop" name="hadoop-mapreduce-client-common" conf="compile, runtime" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="2.2.0"/>
 				<artifacts>
@@ -725,7 +737,7 @@
 				</artifacts>
 			</revision>
 			<revision name="2.2.0" status="release" pubdate="20131007143515" resolver="Nexus Repository" artresolver="Nexus Repository" evicted="latest-revision" evicted-reason="" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="-1">
-				<metadata-artifact status="successful" details="" size="5032" time="29" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-yarn-common/ivy-2.2.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-yarn-common/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://101.251.236.34:8081/nexus/content/groups/scalasbt/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="5032" time="258" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-yarn-common/ivy-2.2.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-yarn-common/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://101.251.236.34:8081/nexus/content/groups/scalasbt/org/apache/hadoop/hadoop-yarn-common/2.2.0/hadoop-yarn-common-2.2.0.pom"/>
 				<evicted-by rev="2.6.0"/>
 				<caller organisation="org.apache.hadoop" name="hadoop-mapreduce-client-core" conf="compile, runtime" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="2.2.0"/>
 				<caller organisation="org.apache.hadoop" name="hadoop-yarn-client" conf="compile, runtime" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="2.2.0"/>
@@ -773,7 +785,7 @@
 				</artifacts>
 			</revision>
 			<revision name="2.2.0" status="release" pubdate="20131007143452" resolver="Nexus Repository" artresolver="Nexus Repository" evicted="latest-revision" evicted-reason="" homepage="" downloaded="true" searched="true" default="false" conf="default(compile), compile, runtime, compile(*), runtime(*), master(compile), master" position="-1">
-				<metadata-artifact status="successful" details="" size="2956" time="26" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-yarn-api/ivy-2.2.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-yarn-api/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://101.251.236.34:8081/nexus/content/groups/scalasbt/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="2956" time="268" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-yarn-api/ivy-2.2.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-yarn-api/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://101.251.236.34:8081/nexus/content/groups/scalasbt/org/apache/hadoop/hadoop-yarn-api/2.2.0/hadoop-yarn-api-2.2.0.pom"/>
 				<evicted-by rev="2.6.0-cdh5.4.0"/>
 				<caller organisation="org.apache.hadoop" name="hadoop-yarn-common" conf="compile, runtime" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="2.2.0"/>
 				<caller organisation="org.apache.hadoop" name="hadoop-client" conf="compile, runtime" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="2.2.0"/>
@@ -1494,7 +1506,7 @@
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-jobclient">
 			<revision name="2.6.0" status="release" pubdate="20141114065021" resolver="Nexus Repository" artresolver="Nexus Repository" homepage="" downloaded="true" searched="true" default="false" conf="default(compile), default, compile, runtime, compile(*), runtime(*), master(compile), master" position="42">
-				<metadata-artifact status="successful" details="" size="5656" time="26" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-jobclient/ivy-2.6.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-jobclient/ivy-2.6.0.xml.original" origin-is-local="false" origin-location="http://101.251.236.34:8081/nexus/content/groups/scalasbt/org/apache/hadoop/hadoop-mapreduce-client-jobclient/2.6.0/hadoop-mapreduce-client-jobclient-2.6.0.pom"/>
+				<metadata-artifact status="successful" details="" size="5656" time="254" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-jobclient/ivy-2.6.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-jobclient/ivy-2.6.0.xml.original" origin-is-local="false" origin-location="http://101.251.236.34:8081/nexus/content/groups/scalasbt/org/apache/hadoop/hadoop-mapreduce-client-jobclient/2.6.0/hadoop-mapreduce-client-jobclient-2.6.0.pom"/>
 				<caller organisation="org.apache.hadoop" name="hadoop-client" conf="null, compile, runtime" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="2.2.0"/>
 				<caller organisation="default" name="sparkdemo_2.10" conf="compile, runtime" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="1.0"/>
 				<artifacts>
@@ -1513,7 +1525,7 @@
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-shuffle">
 			<revision name="2.6.0" status="release" pubdate="20141114064937" resolver="Nexus Repository" artresolver="Nexus Repository" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="108">
-				<metadata-artifact status="successful" details="" size="3071" time="31" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-shuffle/ivy-2.6.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-shuffle/ivy-2.6.0.xml.original" origin-is-local="false" origin-location="http://101.251.236.34:8081/nexus/content/groups/scalasbt/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.6.0/hadoop-mapreduce-client-shuffle-2.6.0.pom"/>
+				<metadata-artifact status="successful" details="" size="3071" time="285" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-shuffle/ivy-2.6.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-shuffle/ivy-2.6.0.xml.original" origin-is-local="false" origin-location="http://101.251.236.34:8081/nexus/content/groups/scalasbt/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.6.0/hadoop-mapreduce-client-shuffle-2.6.0.pom"/>
 				<caller organisation="org.apache.hadoop" name="hadoop-mapreduce-client-jobclient" conf="compile, runtime" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="2.6.0"/>
 				<caller organisation="org.apache.hadoop" name="hadoop-mapreduce-client-app" conf="compile, runtime" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="2.2.0"/>
 				<artifacts>
@@ -1523,7 +1535,7 @@
 				</artifacts>
 			</revision>
 			<revision name="2.2.0" status="release" pubdate="20131007143703" resolver="Nexus Repository" artresolver="Nexus Repository" evicted="latest-revision" evicted-reason="" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="-1">
-				<metadata-artifact status="successful" details="" size="1675" time="27" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-shuffle/ivy-2.2.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-shuffle/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://101.251.236.34:8081/nexus/content/groups/scalasbt/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="1675" time="258" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-shuffle/ivy-2.2.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-shuffle/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://101.251.236.34:8081/nexus/content/groups/scalasbt/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.2.0/hadoop-mapreduce-client-shuffle-2.2.0.pom"/>
 				<evicted-by rev="2.6.0"/>
 				<caller organisation="org.apache.hadoop" name="hadoop-mapreduce-client-app" conf="compile, runtime" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="2.2.0"/>
 				<artifacts>
@@ -1543,7 +1555,7 @@
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-common">
 			<revision name="2.6.0" status="release" pubdate="20141114064927" resolver="Nexus Repository" artresolver="Nexus Repository" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="92">
-				<metadata-artifact status="successful" details="" size="3273" time="27" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/ivy-2.6.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/ivy-2.6.0.xml.original" origin-is-local="false" origin-location="http://101.251.236.34:8081/nexus/content/groups/scalasbt/org/apache/hadoop/hadoop-mapreduce-client-common/2.6.0/hadoop-mapreduce-client-common-2.6.0.pom"/>
+				<metadata-artifact status="successful" details="" size="3273" time="278" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/ivy-2.6.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/ivy-2.6.0.xml.original" origin-is-local="false" origin-location="http://101.251.236.34:8081/nexus/content/groups/scalasbt/org/apache/hadoop/hadoop-mapreduce-client-common/2.6.0/hadoop-mapreduce-client-common-2.6.0.pom"/>
 				<caller organisation="org.apache.hadoop" name="hadoop-mapreduce-client-jobclient" conf="compile, runtime" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="2.6.0"/>
 				<caller organisation="org.apache.hadoop" name="hadoop-mapreduce-client-shuffle" conf="compile, runtime" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="2.6.0"/>
 				<caller organisation="org.apache.hadoop" name="hadoop-mapreduce-client-app" conf="compile, runtime" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="2.2.0"/>
@@ -1554,7 +1566,7 @@
 				</artifacts>
 			</revision>
 			<revision name="2.2.0" status="release" pubdate="20131007143659" resolver="Nexus Repository" artresolver="Nexus Repository" evicted="latest-revision" evicted-reason="" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="-1">
-				<metadata-artifact status="successful" details="" size="3273" time="77" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/ivy-2.2.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://101.251.236.34:8081/nexus/content/groups/scalasbt/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="3273" time="281" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/ivy-2.2.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://101.251.236.34:8081/nexus/content/groups/scalasbt/org/apache/hadoop/hadoop-mapreduce-client-common/2.2.0/hadoop-mapreduce-client-common-2.2.0.pom"/>
 				<evicted-by rev="2.6.0"/>
 				<caller organisation="org.apache.hadoop" name="hadoop-mapreduce-client-app" conf="compile, runtime" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="2.2.0"/>
 				<artifacts>
@@ -1563,7 +1575,7 @@
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-core">
 			<revision name="2.6.0" status="release" pubdate="20141114064858" resolver="Nexus Repository" artresolver="Nexus Repository" homepage="" downloaded="true" searched="true" default="false" conf="default(compile), default, compile, runtime, compile(*), runtime(*), master(compile), master" position="105">
-				<metadata-artifact status="successful" details="" size="3492" time="27" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/ivy-2.6.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/ivy-2.6.0.xml.original" origin-is-local="false" origin-location="http://101.251.236.34:8081/nexus/content/groups/scalasbt/org/apache/hadoop/hadoop-mapreduce-client-core/2.6.0/hadoop-mapreduce-client-core-2.6.0.pom"/>
+				<metadata-artifact status="successful" details="" size="3492" time="405" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/ivy-2.6.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/ivy-2.6.0.xml.original" origin-is-local="false" origin-location="http://101.251.236.34:8081/nexus/content/groups/scalasbt/org/apache/hadoop/hadoop-mapreduce-client-core/2.6.0/hadoop-mapreduce-client-core-2.6.0.pom"/>
 				<caller organisation="org.apache.hadoop" name="hadoop-client" conf="null" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.2.0" callerrev="2.2.0"/>
 				<caller organisation="default" name="sparkdemo_2.10" conf="compile, runtime" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="1.0"/>
 				<caller organisation="org.apache.hadoop" name="hadoop-mapreduce-client-common" conf="compile, runtime" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="2.2.0"/>
@@ -1576,7 +1588,7 @@
 				</artifacts>
 			</revision>
 			<revision name="2.2.0" status="release" pubdate="20131007143626" resolver="Nexus Repository" artresolver="Nexus Repository" evicted="latest-revision" evicted-reason="" homepage="" downloaded="true" searched="true" default="false" conf="default(compile), compile, runtime, compile(*), runtime(*), master(compile), master" position="-1">
-				<metadata-artifact status="successful" details="" size="3085" time="25" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/ivy-2.2.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://101.251.236.34:8081/nexus/content/groups/scalasbt/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="3085" time="259" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/ivy-2.2.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://101.251.236.34:8081/nexus/content/groups/scalasbt/org/apache/hadoop/hadoop-mapreduce-client-core/2.2.0/hadoop-mapreduce-client-core-2.2.0.pom"/>
 				<evicted-by rev="2.6.0"/>
 				<caller organisation="org.apache.hadoop" name="hadoop-client" conf="compile, runtime" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="2.2.0"/>
 				<caller organisation="default" name="sparkdemo_2.10" conf="compile, runtime" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.6.0" callerrev="1.0"/>
@@ -1598,7 +1610,7 @@
 				</artifacts>
 			</revision>
 			<revision name="2.2.0" status="release" pubdate="20131007143604" resolver="Nexus Repository" artresolver="Nexus Repository" evicted="latest-revision" evicted-reason="" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="-1">
-				<metadata-artifact status="successful" details="" size="1961" time="27" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-yarn-client/ivy-2.2.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-yarn-client/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://101.251.236.34:8081/nexus/content/groups/scalasbt/org/apache/hadoop/hadoop-yarn-client/2.2.0/hadoop-yarn-client-2.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="1961" time="264" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-yarn-client/ivy-2.2.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-yarn-client/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://101.251.236.34:8081/nexus/content/groups/scalasbt/org/apache/hadoop/hadoop-yarn-client/2.2.0/hadoop-yarn-client-2.2.0.pom"/>
 				<evicted-by rev="2.6.0"/>
 				<caller organisation="org.apache.hadoop" name="hadoop-mapreduce-client-common" conf="compile, runtime" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="2.2.0"/>
 				<artifacts>
@@ -2777,7 +2789,7 @@
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-app">
 			<revision name="2.2.0" status="release" pubdate="20131007143711" resolver="Nexus Repository" artresolver="Nexus Repository" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="28">
-				<metadata-artifact status="successful" details="" size="4335" time="33" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-app/ivy-2.2.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-app/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://101.251.236.34:8081/nexus/content/groups/scalasbt/org/apache/hadoop/hadoop-mapreduce-client-app/2.2.0/hadoop-mapreduce-client-app-2.2.0.pom"/>
+				<metadata-artifact status="successful" details="" size="4335" time="282" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-app/ivy-2.2.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-app/ivy-2.2.0.xml.original" origin-is-local="false" origin-location="http://101.251.236.34:8081/nexus/content/groups/scalasbt/org/apache/hadoop/hadoop-mapreduce-client-app/2.2.0/hadoop-mapreduce-client-app-2.2.0.pom"/>
 				<caller organisation="org.apache.hadoop" name="hadoop-client" conf="compile, runtime" rev="2.2.0" rev-constraint-default="2.2.0" rev-constraint-dynamic="2.2.0" callerrev="2.2.0"/>
 				<artifacts>
 					<artifact name="hadoop-mapreduce-client-app" type="jar" ext="jar" status="no" details="" size="482042" time="0" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-app/jars/hadoop-mapreduce-client-app-2.2.0.jar">
