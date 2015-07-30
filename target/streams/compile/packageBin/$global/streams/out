@@ -106,6 +106,8 @@
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com[0m
 [0m[[0mdebug[0m] [0m	com/spark/work/sqlTspark2$$anonfun$27.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/work/sqlTspark2$$anonfun$27.class[0m
+[0m[[0mdebug[0m] [0m	com/spark/test/combinefile$.class[0m
+[0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/test/combinefile$.class[0m
 [0m[[0mdebug[0m] [0m	com/spark/test/wcStreamWindow$$anonfun$6.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/test/wcStreamWindow$$anonfun$6.class[0m
 [0m[[0mdebug[0m] [0m	com/scalacode/modematch14.class[0m
@@ -244,6 +246,8 @@
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/LogA.class[0m
 [0m[[0mdebug[0m] [0m	com/scalacode/tra3.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/tra3.class[0m
+[0m[[0mdebug[0m] [0m	com/scalacode/tcase$$anonfun$price$1.class[0m
+[0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/tcase$$anonfun$price$1.class[0m
 [0m[[0mdebug[0m] [0m	com/spark/test/WordCount2$$anonfun$6.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/test/WordCount2$$anonfun$6.class[0m
 [0m[[0mdebug[0m] [0m	com/spark/test/wcStreaming$.class[0m
@@ -304,6 +308,8 @@
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/tools17.class[0m
 [0m[[0mdebug[0m] [0m	com/scalacode/Pair.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/Pair.class[0m
+[0m[[0mdebug[0m] [0m	com/scalacode/tcase$.class[0m
+[0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/tcase$.class[0m
 [0m[[0mdebug[0m] [0m	com/spark/work/sqlTspark2$$anonfun$33.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/work/sqlTspark2$$anonfun$33.class[0m
 [0m[[0mdebug[0m] [0m	com/spark/work/sqlTspark2$.class[0m
@@ -330,8 +336,12 @@
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/test/MergeSort.class[0m
 [0m[[0mdebug[0m] [0m	com/spark/test/wcStreamWindow$$anonfun$5.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/test/wcStreamWindow$$anonfun$5.class[0m
+[0m[[0mdebug[0m] [0m	com/scalacode/tcase$Article.class[0m
+[0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/tcase$Article.class[0m
 [0m[[0mdebug[0m] [0m	com/scalacode/helloscala$.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/helloscala$.class[0m
+[0m[[0mdebug[0m] [0m	com/scalacode/tcase.class[0m
+[0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/tcase.class[0m
 [0m[[0mdebug[0m] [0m	com/spark/work/sqlTspark2$$anonfun$36$$anonfun$apply$1.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/work/sqlTspark2$$anonfun$36$$anonfun$apply$1.class[0m
 [0m[[0mdebug[0m] [0m	com/scalacode/function12$$anonfun$2.class[0m
@@ -346,6 +356,8 @@
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/work/sqlTspark2$$anonfun$35.class[0m
 [0m[[0mdebug[0m] [0m	com/spark/test/wcStreaming.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/test/wcStreaming.class[0m
+[0m[[0mdebug[0m] [0m	com/scalacode/tcase$Item.class[0m
+[0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/tcase$Item.class[0m
 [0m[[0mdebug[0m] [0m	com/spark/test/WordCount$$anonfun$3.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/test/WordCount$$anonfun$3.class[0m
 [0m[[0mdebug[0m] [0m	com/tools/MessageSender$.class[0m
@@ -416,6 +428,8 @@
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/test/WordCount$$anonfun$2.class[0m
 [0m[[0mdebug[0m] [0m	com/mllib/sparkInstance$.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/mllib/sparkInstance$.class[0m
+[0m[[0mdebug[0m] [0m	com/scalacode/tcase$Article$.class[0m
+[0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/tcase$Article$.class[0m
 [0m[[0mdebug[0m] [0m	com/spark/work/sqlTspark2.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/work/sqlTspark2.class[0m
 [0m[[0mdebug[0m] [0m	com/scalacode/tools1$$anonfun$1.class[0m
@@ -442,6 +456,10 @@
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/test/wcStreamWindow$$anonfun$1.class[0m
 [0m[[0mdebug[0m] [0m	com/spark/test/wcStreamWindow$.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/test/wcStreamWindow$.class[0m
+[0m[[0mdebug[0m] [0m	com/spark/test/combinefile.class[0m
+[0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/test/combinefile.class[0m
+[0m[[0mdebug[0m] [0m	com/scalacode/tcase$Bundle.class[0m
+[0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/tcase$Bundle.class[0m
 [0m[[0mdebug[0m] [0m	com/spark/test/Consumer$$anonfun$2.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/test/Consumer$$anonfun$2.class[0m
 [0m[[0mdebug[0m] [0m	com/scalacode/annotation.class[0m
@@ -454,6 +472,8 @@
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/modematch14$$anonfun$main$2.class[0m
 [0m[[0mdebug[0m] [0m	com/scalacode/Bundle$.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/Bundle$.class[0m
+[0m[[0mdebug[0m] [0m	com/scalacode/tcase$Bundle$.class[0m
+[0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/tcase$Bundle$.class[0m
 [0m[[0mdebug[0m] [0m	com/spark/work/sqlTspark2$$anonfun$36.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/work/sqlTspark2$$anonfun$36.class[0m
 [0m[[0mdebug[0m] [0m	com/test/test1$$anonfun$strCut1$1.class[0m
