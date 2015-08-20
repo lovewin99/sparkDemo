@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20150810172214"/>
+		date="20150820092232"/>
 	<dependencies>
 		<module organisation="com.sun.jersey" name="jersey-core">
 			<revision name="1.14" status="release" pubdate="20120910013831" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="166">
@@ -1969,7 +1969,7 @@
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-jobclient">
 			<revision name="2.6.0-cdh5.4.0" status="release" pubdate="20150422032708" resolver="maven Repository" artresolver="maven Repository" homepage="" downloaded="true" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="70">
-				<metadata-artifact status="successful" details="" size="5898" time="986" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-jobclient/ivy-2.6.0-cdh5.4.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-jobclient/ivy-2.6.0-cdh5.4.0.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/hadoop/hadoop-mapreduce-client-jobclient/2.6.0-cdh5.4.0/hadoop-mapreduce-client-jobclient-2.6.0-cdh5.4.0.pom"/>
+				<metadata-artifact status="successful" details="" size="5898" time="1283" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-jobclient/ivy-2.6.0-cdh5.4.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-jobclient/ivy-2.6.0-cdh5.4.0.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/hadoop/hadoop-mapreduce-client-jobclient/2.6.0-cdh5.4.0/hadoop-mapreduce-client-jobclient-2.6.0-cdh5.4.0.pom"/>
 				<caller organisation="default" name="sparkdemo$sources_javadoc_2.10" conf="compile, runtime" rev="2.6.0-cdh5.4.0" rev-constraint-default="2.6.0-cdh5.4.0" rev-constraint-dynamic="2.6.0-cdh5.4.0" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="hadoop-mapreduce-client-jobclient" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="3794597" time="0" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-jobclient/docs/hadoop-mapreduce-client-jobclient-2.6.0-cdh5.4.0-javadoc.jar">
@@ -1986,7 +1986,7 @@
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-app">
 			<revision name="2.6.0-cdh5.4.0" status="release" pubdate="20150422032642" resolver="maven Repository" artresolver="maven Repository" homepage="" downloaded="true" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="45">
-				<metadata-artifact status="successful" details="" size="4715" time="999" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-app/ivy-2.6.0-cdh5.4.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-app/ivy-2.6.0-cdh5.4.0.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/hadoop/hadoop-mapreduce-client-app/2.6.0-cdh5.4.0/hadoop-mapreduce-client-app-2.6.0-cdh5.4.0.pom"/>
+				<metadata-artifact status="successful" details="" size="4715" time="1009" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-app/ivy-2.6.0-cdh5.4.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-app/ivy-2.6.0-cdh5.4.0.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/hadoop/hadoop-mapreduce-client-app/2.6.0-cdh5.4.0/hadoop-mapreduce-client-app-2.6.0-cdh5.4.0.pom"/>
 				<caller organisation="default" name="sparkdemo$sources_javadoc_2.10" conf="compile, runtime" rev="2.6.0-cdh5.4.0" rev-constraint-default="2.6.0-cdh5.4.0" rev-constraint-dynamic="2.6.0-cdh5.4.0" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="hadoop-mapreduce-client-app" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="294141" time="0" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-app/srcs/hadoop-mapreduce-client-app-2.6.0-cdh5.4.0-sources.jar">
@@ -2003,7 +2003,7 @@
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-shuffle">
 			<revision name="2.6.0-cdh5.4.0" status="release" pubdate="20150422032631" resolver="maven Repository" artresolver="maven Repository" homepage="" downloaded="true" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="69">
-				<metadata-artifact status="successful" details="" size="3089" time="983" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-shuffle/ivy-2.6.0-cdh5.4.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-shuffle/ivy-2.6.0-cdh5.4.0.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.6.0-cdh5.4.0/hadoop-mapreduce-client-shuffle-2.6.0-cdh5.4.0.pom"/>
+				<metadata-artifact status="successful" details="" size="3089" time="997" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-shuffle/ivy-2.6.0-cdh5.4.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-shuffle/ivy-2.6.0-cdh5.4.0.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.6.0-cdh5.4.0/hadoop-mapreduce-client-shuffle-2.6.0-cdh5.4.0.pom"/>
 				<caller organisation="default" name="sparkdemo$sources_javadoc_2.10" conf="compile, runtime" rev="2.6.0-cdh5.4.0" rev-constraint-default="2.6.0-cdh5.4.0" rev-constraint-dynamic="2.6.0-cdh5.4.0" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="hadoop-mapreduce-client-shuffle" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="276602" time="0" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-shuffle/docs/hadoop-mapreduce-client-shuffle-2.6.0-cdh5.4.0-javadoc.jar">
@@ -2037,7 +2037,7 @@
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-common">
 			<revision name="2.6.0-cdh5.4.0" status="release" pubdate="20150422032624" resolver="maven Repository" artresolver="maven Repository" homepage="" downloaded="true" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="46">
-				<metadata-artifact status="successful" details="" size="3357" time="993" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/ivy-2.6.0-cdh5.4.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/ivy-2.6.0-cdh5.4.0.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/hadoop/hadoop-mapreduce-client-common/2.6.0-cdh5.4.0/hadoop-mapreduce-client-common-2.6.0-cdh5.4.0.pom"/>
+				<metadata-artifact status="successful" details="" size="3357" time="986" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/ivy-2.6.0-cdh5.4.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/ivy-2.6.0-cdh5.4.0.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/hadoop/hadoop-mapreduce-client-common/2.6.0-cdh5.4.0/hadoop-mapreduce-client-common-2.6.0-cdh5.4.0.pom"/>
 				<caller organisation="default" name="sparkdemo$sources_javadoc_2.10" conf="compile, runtime" rev="2.6.0-cdh5.4.0" rev-constraint-default="2.6.0-cdh5.4.0" rev-constraint-dynamic="2.6.0-cdh5.4.0" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="hadoop-mapreduce-client-common" type="jar" ext="jar" status="no" details="" size="752570" time="0" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-common/jars/hadoop-mapreduce-client-common-2.6.0-cdh5.4.0.jar">
@@ -2054,7 +2054,7 @@
 		</module>
 		<module organisation="org.apache.hadoop" name="hadoop-mapreduce-client-core">
 			<revision name="2.6.0-cdh5.4.0" status="release" pubdate="20150422032608" resolver="maven Repository" artresolver="maven Repository" homepage="" downloaded="true" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="62">
-				<metadata-artifact status="successful" details="" size="3510" time="993" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/ivy-2.6.0-cdh5.4.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/ivy-2.6.0-cdh5.4.0.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/hadoop/hadoop-mapreduce-client-core/2.6.0-cdh5.4.0/hadoop-mapreduce-client-core-2.6.0-cdh5.4.0.pom"/>
+				<metadata-artifact status="successful" details="" size="3510" time="987" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/ivy-2.6.0-cdh5.4.0.xml" searched="true" original-local-location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/ivy-2.6.0-cdh5.4.0.xml.original" origin-is-local="false" origin-location="https://repository.cloudera.com/artifactory/cloudera-repos/org/apache/hadoop/hadoop-mapreduce-client-core/2.6.0-cdh5.4.0/hadoop-mapreduce-client-core-2.6.0-cdh5.4.0.pom"/>
 				<caller organisation="default" name="sparkdemo$sources_javadoc_2.10" conf="compile, runtime" rev="2.6.0-cdh5.4.0" rev-constraint-default="2.6.0-cdh5.4.0" rev-constraint-dynamic="2.6.0-cdh5.4.0" callerrev="1.0"/>
 				<artifacts>
 					<artifact name="hadoop-mapreduce-client-core" type="jar" ext="jar" status="no" details="" size="1526162" time="0" location="/home/wangxy/.ivy2/cache/org.apache.hadoop/hadoop-mapreduce-client-core/jars/hadoop-mapreduce-client-core-2.6.0-cdh5.4.0.jar">

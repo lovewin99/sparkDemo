@@ -4,7 +4,7 @@
 		module="sparkdemo$sources_javadoc_2.10"
 		revision="1.0"
 		status="integration"
-		publication="20150810172213"
+		publication="20150820092232"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
