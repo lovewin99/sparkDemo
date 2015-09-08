@@ -91,7 +91,15 @@ object test1 {
     val tmetr = new tmetr
     tmetr.test
 */
-    val tstat = new tstatic
-    tstat.test
+
+    val dv1: Vector = Vectors.dense(1.0, 2.0, 3.0)
+    val dv2: Vector = Vectors.dense(4.0, 5.0, 6.0)
+    val n = Vectors.sqdist(dv1, dv2)
+    val n1 = Vectors.norm(dv1, 2)
+
+    println("n = "+n)
+
+//    val tstat = new tstatic
+//    tstat.test
   }
 }

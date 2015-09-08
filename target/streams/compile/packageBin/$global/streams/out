@@ -14,6 +14,8 @@
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/tools/MessageSender$$anon$1.class[0m
 [0m[[0mdebug[0m] [0m	com/spark/work/sqlTspark2$$anonfun$37.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/work/sqlTspark2$$anonfun$37.class[0m
+[0m[[0mdebug[0m] [0m	com/spark/test/combinefile$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/test/combinefile$$anonfun$2.class[0m
 [0m[[0mdebug[0m] [0m	com/spark/test/WordCount.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/test/WordCount.class[0m
 [0m[[0mdebug[0m] [0m	com/scalacode/red.class[0m
@@ -124,8 +126,6 @@
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/work/sqlTspark2$$anonfun$6.class[0m
 [0m[[0mdebug[0m] [0m	com/spark/work/sqlTspark2$$anonfun$reduceProcess$1.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/work/sqlTspark2$$anonfun$reduceProcess$1.class[0m
-[0m[[0mdebug[0m] [0m	com/hadoop/CombineXmlInputFormat.class[0m
-[0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/hadoop/CombineXmlInputFormat.class[0m
 [0m[[0mdebug[0m] [0m	com/test/test1.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/test/test1.class[0m
 [0m[[0mdebug[0m] [0m	com/scalacode/tra$class.class[0m
@@ -300,6 +300,8 @@
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/extensclass.class[0m
 [0m[[0mdebug[0m] [0m	com/scalacode/Reader.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/Reader.class[0m
+[0m[[0mdebug[0m] [0m	com/spark/test/combinefile$$anonfun$3.class[0m
+[0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/test/combinefile$$anonfun$3.class[0m
 [0m[[0mdebug[0m] [0m	com/tools[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/tools[0m
 [0m[[0mdebug[0m] [0m	com/scalacode/trait10$.class[0m
@@ -344,6 +346,8 @@
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/test/MergeSort.class[0m
 [0m[[0mdebug[0m] [0m	com/spark/test/wcStreamWindow$$anonfun$5.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/test/wcStreamWindow$$anonfun$5.class[0m
+[0m[[0mdebug[0m] [0m	com/spark/test/combinefile$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/test/combinefile$$anonfun$1.class[0m
 [0m[[0mdebug[0m] [0m	com/scalacode/tcase$Article.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/tcase$Article.class[0m
 [0m[[0mdebug[0m] [0m	com/scalacode/helloscala$.class[0m
@@ -528,8 +532,6 @@
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/helloscala$$anonfun$2.class[0m
 [0m[[0mdebug[0m] [0m	com/spark/work/sqlTspark2$$anonfun$38.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/spark/work/sqlTspark2$$anonfun$38.class[0m
-[0m[[0mdebug[0m] [0m	com/hadoop/CombineXmlInputFormat$XmlRecordReader.class[0m
-[0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/hadoop/CombineXmlInputFormat$XmlRecordReader.class[0m
 [0m[[0mdebug[0m] [0m	com/scalacode/advancedtype18$.class[0m
 [0m[[0mdebug[0m] [0m	  /home/wangxy/IdeaProjects/sparkDemo/target/scala-2.10/classes/com/scalacode/advancedtype18$.class[0m
 [0m[[0mdebug[0m] [0m	com/mllib/tstatic.class[0m

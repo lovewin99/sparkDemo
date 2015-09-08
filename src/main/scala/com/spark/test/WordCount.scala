@@ -20,10 +20,10 @@ object WordCount {
     val conf = new SparkConf()
     val sc = new SparkContext(conf)
     val textRDD = sc.textFile(args(0))
-    val textRdd = sc.textFile(args(1))
-    textRDD.cache()
+//    val textRdd = sc.textFile(args(1))
+//    textRDD.cache()
 
-    val result = textRDD.flatMap(_.split(" ")).map((_, 1)).reduceByKey(_+_)
+    val result = textRDD.flatMap(_.split("\\|")).map((_, 1)).reduceByKey(_+_)
 
 //    val result = textRDD.flatMap(_.split(" ")).map((_, 1)).join(textRdd.flatMap(_.split(" ")).map((_, 1))).map(e => e.)
     result.saveAsTextFile(args(1))
