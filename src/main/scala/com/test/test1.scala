@@ -12,6 +12,12 @@ import scala.collection.mutable._
  */
 object test1 {
 
+  def testfold(): Unit={
+    val a = List[Int](1,2,3,4)
+    a.foldLeft(0)(_+_)
+    (0/:a)(_+_)
+  }
+
   def timename() : String = {
     val today = Calendar.getInstance().getTime()
     val time1 = new SimpleDateFormat("yyyyMMddHHmm")
