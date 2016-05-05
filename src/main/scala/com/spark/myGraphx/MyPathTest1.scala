@@ -46,12 +46,11 @@ object MyPathTest1 {
         newAttr ++= attr
         message.foreach{x =>
           val str = x.mkString(",")
-          if(!oldStrList.contains(x)){
+          if(!oldStrList.contains(str)){
             val y = x :+ attr.head.head
             newAttr += y
           }
         }
-        println(s"newAttr=${newAttr.toList}")
         newAttr.toList
       }
     }
