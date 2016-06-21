@@ -29,7 +29,7 @@ object t_user_exp {
   /**
    * 获得给定时间的第n小时前的时间
    *
-   * @param dateStr 给定时间 format(yyyyMMddHHmmss)
+   * @param dateStr 给定时间 format(yyyy-MM-dd HH:mm:ss)
    * @param n       指定时间跨度
    * @return 返回给定时间的第n小时的时间
    */
@@ -65,12 +65,12 @@ object t_user_exp {
     val res = rdd.flatMap{
       case seg(Array(cur_date, prov_id, city_id, area_id, user_id, exp_id, net_type, lac, cell_id, map_longi, map_lati,time_type)) =>
         // 需要关注的异常id
-        val expids = List(2, 106, 107, 108, 110, 16, 105, 9, 14, 82, 116, 117, 111, 17, 18, 112)
+        val expids = List("2", "106", "107", "108", "110", "16", "105", "9", "14", "82", "116", "117", "111", "17", "18", "112")
         // 网络制式
-        val  nettypes = List(1,5,7)
+        val  nettypes = List("1","5","7")
         // if中的条件　相当于sql中的where和join中的on
         val stimeStamp = getNhour(stime, -8)
-        val etimeStamp = getNhour(stime, 16)
+        val etimeStamp = getNhour(etime, 16)
         if(nettypes.contains(net_type) && expids.contains(exp_id) && time_type == "1" && cur_date.toLong >= stimeStamp && cur_date.toLong <= etimeStamp){
           /*
               para_dp.p_int_general表中的内容　用于清洗数据中的net_type
