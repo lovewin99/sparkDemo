@@ -47,6 +47,12 @@ object t_user_exp {
 //    val tabSegment = "log_id,cur_date,prov_id,city_id,area_id,user_id,exp_id,net_type,mcc,mnc,lac,cell_id,map_lati,map_longi,event_dura,cell_auid,grid_id,logic_cell_auid,exp_work_id,exp_work_status,loc_type,rxlev_rscp,exp_type,vsn,upd_date,imei,mob_system,gps_type,carrier_id,time_type,time_id"
 
     //s_basic_net_event
+
+    if(args.length != 4){
+      System.out.println("usage: <inpath> <start-time> <end-time> <outpath>")
+      System.exit(1)
+    }
+
     val Array(inpath, stime, etime, outpath) = args
 
     val conf = new SparkConf().setAppName("t_user_exp")
@@ -73,9 +79,9 @@ object t_user_exp {
               7	4	net_type	1	网络制式	2015-09-24 17:11:10
            */
           val nType = net_type match{
-            case 1 => 2
-            case 5 => 3
-            case 7 => 4
+            case "1" => "2"
+            case "5" => "3"
+            case "7" => "4"
           }
           Array(1,2,3,4).map{
             case 1 =>
@@ -103,6 +109,8 @@ object t_user_exp {
     }.distinct().filter(_ != "")
 
     res.saveAsTextFile(outpath)
+
+    sc.stop()
   }
 
 }
