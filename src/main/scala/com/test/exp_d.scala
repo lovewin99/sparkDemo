@@ -146,7 +146,7 @@ object exp_d {
         val key = (prov_id, city_id, area_id, prov_name, city_name, area_name, lac, cell_id, cell_name, carrier_id,
           carrier_name)
         (key, v)
-    }.reduceByKey((x, y) => (x, y).zipped.map(_+_) ).map{
+    }.reduceByKey((x, y) => (x, y).zipped.map(_+_)).map{
       case ((prov_id, city_id, area_id, prov_name, city_name, area_name, lac, cell_id, cell_name, carrier_id,
       carrier_name), v) =>
         val str1 = Array(prov_id, city_id, area_id, prov_name, city_name, area_name, lac, cell_id, cell_name,
