@@ -87,21 +87,21 @@ object t_user_exp {
             case 1 =>
               val grid_longi100 = f"${map_longi.toDouble}%.3f"
               val grid_lati100 = f"${map_lati.toDouble}%.3f"
-              s"$prov_id,$city_id,$area_id,$user_id,$nType,1,NULL,NULL,1,$grid_longi100,$grid_lati100,$time"
+              s"$prov_id,$city_id,$area_id,$user_id,$nType,1,,,1,$grid_longi100,$grid_lati100,$time"
             case 2 =>
               val tmp_longi = f"${map_longi.toDouble}%.3f".toDouble / 2
               val tmp_lati = f"${map_lati.toDouble}%.3f".toDouble / 2
               val grid_longi200 = f"$tmp_longi%.3f".toDouble * 2
               val grid_lati200  = f"$tmp_lati%.3f".toDouble * 2
-              s"$prov_id,$city_id,$area_id,$user_id,$nType,1,NULL,NULL,2,$grid_longi200,$grid_lati200,$time"
+              s"$prov_id,$city_id,$area_id,$user_id,$nType,1,,,2,$grid_longi200,$grid_lati200,$time"
             case 3 =>
               val tmp_longi = f"${map_longi.toDouble}%.3f".toDouble / 4
               val tmp_lati = f"${map_lati.toDouble}%.3f".toDouble / 4
               val grid_longi400 = f"$tmp_longi%.3f".toDouble * 4
               val grid_lati400  = f"$tmp_lati%.3f".toDouble * 4
-              s"$prov_id,$city_id,$area_id,$user_id,$nType,1,NULL,NULL,4,$grid_longi400,$grid_lati400,$time"
+              s"$prov_id,$city_id,$area_id,$user_id,$nType,1,,,4,$grid_longi400,$grid_lati400,$time"
             case 4 =>
-              s"$prov_id,$city_id,$area_id,$user_id,$nType,2,$lac,$cell_id,NUll,NULL,NULL,$time"
+              s"$prov_id,$city_id,$area_id,$user_id,$nType,2,$lac,$cell_id,,,,$time"
           }
         }else{
           Array("")
