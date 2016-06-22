@@ -124,13 +124,37 @@ object exp_d {
           imei, carrier_id, carrier_name, exp_id, upd_date)
         val value = 1
         (key, value)
-    }.reduceByKey(_+_).map{
+    }.reduceByKey(_+_).cache()
+
+    // 产生h_basic_user_exp
+    res1.map{
       case ((prov_id, city_id, area_id, lac, cell_id, cell_name, prov_name, city_name, area_name, user_id,
       imei, carrier_id, carrier_name, exp_id, upd_date), cnt) =>
         Array(prov_id, city_id, area_id, lac, cell_id, cell_name, prov_name, city_name, area_name, user_id, imei,
           carrier_id, carrier_name, exp_id, cnt, upd_date, "1").mkString(",")
-    }
+    }.saveAsTextFile(outpath1)
 
+    // 产生h_basic_cell_exp
+    res1.map{
+      case ((prov_id, city_id, area_id, lac, cell_id, cell_name, prov_name, city_name, area_name, user_id,
+      imei, carrier_id, carrier_name, exp_id, upd_date), cnt) =>
+        val ids = List("2","9","14","16","17","18","82","105","106","107","108","110","111","112","116","117")
+        val v = Array(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+        val index = ids.indexOf(exp_id)
+        if(index != -1)
+          v.update(index, cnt)
+        val key = (prov_id, city_id, area_id, prov_name, city_name, area_name, lac, cell_id, cell_name, carrier_id,
+          carrier_name)
+        (key, v)
+    }.reduceByKey((x, y) => (x, y).zipped.map(_+_) ).map{
+      case ((prov_id, city_id, area_id, prov_name, city_name, area_name, lac, cell_id, cell_name, carrier_id,
+      carrier_name), v) =>
+        val str1 = Array(prov_id, city_id, area_id, prov_name, city_name, area_name, lac, cell_id, cell_name,
+          carrier_id, carrier_name).mkString(",")
+        val str2 = v.mkString(",")
+        s"$str1,$str2,1"
+    }.saveAsTextFile(outpath2)
+    sc.stop()
 
   }
 
