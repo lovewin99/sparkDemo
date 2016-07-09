@@ -12,7 +12,11 @@ version := "1.0"
 scalaVersion := "2.10.4"
 
 resolvers ++= Seq(
-  "maven Repository" at "https://repository.cloudera.com/artifactory/cloudera-repos/"
+  "maven Repository" at "https://repository.cloudera.com/artifactory/cloudera-repos/",
+  "maven Repository1" at "http://mvnrepository.com",
+  "cloudera" at "https://repository.cloudera.com/artifactory/cloudera-repos/.",
+  "maven Repository" at "https://repository.cloudera.com/artifactory/cloudera-repos/",
+  "chinamaven" at "http://maven.oschina.net/content/groups/public/"
 )
 
 libraryDependencies ++= Seq(
@@ -20,19 +24,22 @@ libraryDependencies ++= Seq(
   "junit" % "junit" % "4.10" % "provided" ,
   "redis.clients" % "jedis" % "2.1.0",
 
-  "org.apache.spark" % "spark-assembly_2.10" % "1.3.0-cdh5.4.0" % "provided",
-  "org.apache.spark" % "spark-core_2.10" % "1.3.0-cdh5.4.0",
-  "org.apache.spark" % "spark-mllib_2.10" % "1.3.0-cdh5.4.0",
-
-  "org.apache.spark" % "spark-streaming_2.10" % "1.3.0-cdh5.4.0",
-  "org.apache.spark" % "spark-streaming-kafka_2.10" % "1.3.0-cdh5.4.0",
-  "org.apache.spark" % "spark-sql_2.10" % "1.3.0-cdh5.4.0",
-
   "org.apache.hive" % "hive-exec" % "1.1.0-cdh5.4.0",
   "org.apache.hadoop" % "hadoop-yarn-api" % "2.6.0-cdh5.4.0",
   "org.apache.hadoop" % "hadoop-mapreduce-client-core" % "2.6.0-cdh5.4.0",
   "org.apache.hadoop" % "hadoop-mapreduce-client-jobclient" % "2.6.0-cdh5.4.0",
-  "org.json" % "json" % "20090211"
+  "org.json" % "json" % "20090211",
+  "org.scalanlp" % "breeze_2.10" % "0.7",
+  "org.scalanlp" % "breeze-math_2.10" % "0.4",
+  "org.scalanlp" % "breeze-viz_2.10" % "0.12",
+
+  "org.apache.spark" % "spark-assembly_2.10" % "1.5.0-cdh5.5.0" % "provided",
+//  "org.apache.spark" % "spark-assembly_2.10" % "1.5.0-cdh5.5.0" % "provided" exclude("org.scalanlp","breeze_2.10"),
+  "org.apache.spark" % "spark-core_2.10" % "1.5.0-cdh5.5.0",
+  "org.apache.spark" % "spark-mllib_2.10" % "1.5.0-cdh5.5.0",
+  "org.apache.spark" % "spark-sql_2.10" % "1.5.0-cdh5.5.0",
+  "org.apache.spark" % "spark-streaming_2.10" % "1.5.0-cdh5.5.0",
+  "org.apache.spark" % "spark-streaming-kafka_2.10" % "1.5.0-cdh5.5.0"
   //  "net.liftweb" % "lift-util_2.9.2" % "2.6.2"
 )
 
