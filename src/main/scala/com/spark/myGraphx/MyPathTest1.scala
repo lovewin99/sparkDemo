@@ -20,14 +20,14 @@ object MyPathTest1 {
     // 创建点 点属性(树深（初始为1），List(List(),List(),```每个路径))
     val vertex = sc.parallelize(Array(
       (3L,List(List("3"))),(7L,List(List("7"))),(5L,List(List("5"))),(2L,List(List("2"))), (6L,List(List("6")))
-      , (8L,List(List("8"))), (1L,List(List("1")))
+      , (8L,List(List("8"))), (1L,List(List("1"))),(9L,List(List("9")))
     ))
 
     // 创建边
     val edge = sc.parallelize(Array(
       Edge(3L, 7L, List("a")),Edge(2L, 5L, List("c")), Edge(5L, 7L, List("e")), Edge(2L, 7L, List("g")),
       Edge(3L, 5L, List("b")),Edge(6L, 5L, List("d")), Edge(8L, 1L,List("f")), Edge(8L, 2L, List("h"))
-      , Edge(8L, 3L, List("i")), Edge(1L, 6L, List("i"))
+      , Edge(8L, 3L, List("i")), Edge(1L, 6L, List("i")), Edge(7L, 9L, List("i"))
     ))
 
     // 创建图
@@ -59,7 +59,9 @@ object MyPathTest1 {
     def sm(triplet: EdgeTriplet[List[List[String]],List[String]]): Iterator[(VertexId,List[List[String]])] = {
       var Flag = false
       triplet.srcAttr.foreach{x =>
-        if(x.contains(start))
+        if(x.contains(end)){
+          Flag = false
+        } else if(x.contains(start))
           Flag = true
       }
       if(Flag){
@@ -78,6 +80,12 @@ object MyPathTest1 {
       println(s"!!!!!!  v1=$v1   v2=$v2")
       println(s"????? v1++v2=${v1++v2}")
       v1++v2
+    }
+
+    // 对环的判断
+    def judgeCircle(lines: List[String], num: Int): Boolean = {
+      val maxnum = lines.toSet.toList.map{x: String=>lines.count(_.equals(x))}.max
+      maxnum <= num
     }
 
     val kk = g.pregel(List(List("x")),Int.MaxValue,EdgeDirection.Out)(vp,sm,mm)

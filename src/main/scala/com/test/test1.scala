@@ -31,6 +31,10 @@ object test1 {
       time1.format(today) + nss.toString
   }
 
+  def kankan(m: Map[Int, Int]): Unit = {
+    m.remove(1)
+  }
+
   def main(args: Array[String]): Unit ={
 
 //    val str1 = "fesfsefes,fesfsefs,fesfsefs"
@@ -39,8 +43,14 @@ object test1 {
 //    makestr
 //    mkList
 //    myMap
-    val stime = timename()
-    println("stime="+stime)
+
+    val m = Map(1->2,2->3)
+    println(s"len=${m.size}")
+    kankan(m)
+    println(s"len=${m.size}")
+
+//    val stime = timename()
+//    println("stime="+stime)
   }
 
   def myMap:Unit={

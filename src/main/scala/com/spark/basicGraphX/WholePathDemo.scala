@@ -48,7 +48,7 @@ object WholePathDemo {
     )
     //创建边RDD
     val edge: RDD[Edge[List[String]]] = sc.parallelize(Array(
-        Edge(3L, 7L, List("a")), //Edge(5L, 3L, List("b")),
+        Edge(3L, 7L, List("a")), Edge(2L, 7L, List("b")),
         Edge(2L, 5L, List("c")), Edge(5L, 7L, List("d"))
       )
     )

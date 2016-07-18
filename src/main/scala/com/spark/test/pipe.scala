@@ -18,8 +18,12 @@ object pipe {
     val sc = new SparkContext(conf)
 
     val Array(strpath, apppath, tarpath) = args
-    val a = sc.textFile(strpath)
-    a.pipe(apppath).saveAsTextFile(tarpath)
+    val a = sc.wholeTextFiles(args(0))
+    a.map{x =>
+      println(x._1)
+      x._2
+    }.pipe(apppath).saveAsTextFile(tarpath)
+
   }
 
 }

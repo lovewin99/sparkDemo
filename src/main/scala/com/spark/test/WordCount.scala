@@ -19,9 +19,11 @@ object WordCount {
 
     val conf = new SparkConf()
     val sc = new SparkContext(conf)
+
+    sc.setLogLevel("WARN")
     val textRDD = sc.textFile(args(0))
 //    val textRdd = sc.textFile(args(1))
-//    textRDD.cache()
+//    textRDD.cache()\
 
     val result = textRDD.flatMap(_.split("\\|")).map((_, 1)).reduceByKey(_+_)
 

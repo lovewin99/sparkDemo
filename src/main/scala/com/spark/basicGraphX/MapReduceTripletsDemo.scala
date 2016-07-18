@@ -14,7 +14,7 @@ object MapReduceTripletsDemo {
   def main(args: Array[String]) {
     val conf = new SparkConf()
     val sc = new SparkContext("local", "MapReduceTripletsDemo", conf)
-
+/*
     //    1,kankan,100
     //    2,hehe,200
     //    3,haha,300
@@ -57,7 +57,7 @@ object MapReduceTripletsDemo {
     //    (1,400)
     //    (3,500)
     //    (2,300)
-
+*/
 
     //创建点RDD
     val v: RDD[(VertexId, Int)] = sc.parallelize(Array( (1L, 1), (2L, 2),(3L, 3), (4L, 4)))

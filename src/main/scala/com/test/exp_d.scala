@@ -40,6 +40,7 @@ object exp_d {
   }
 
   object seg{
+//    stg_dp.s_basic_net_event
     def unapply(in: String): Option[Array[String]] = {
       val strArr = in.split(",", -1)
       // curdate, prov_id,city_id, area_id, lac, cell_id,user_id,carrier_id, net_type, exp_id, imei, time_type
@@ -96,14 +97,19 @@ object exp_d {
             case "7" => "4"
           }
 
+          var carrier_id2 = "1"
+          if(carrier_id != ""){
+            carrier_id2 = carrier_id
+          }
+
           val prov_name = areaInfo.value.getOrElse(prov_id, "")
           val city_name = areaInfo.value.getOrElse(city_id, "")
           val area_name = areaInfo.value.getOrElse(area_id, "")
-          val carrier_name = mdict.value.getOrElse(carrier_id, "")
+          val carrier_name = mdict.value.getOrElse(carrier_id2, "")
 
           val key = Array(prov_id, city_id, lac, cell_id).mkString(",")
           val value = Array(prov_id, city_id, area_id, lac, cell_id, prov_name, city_name, area_name, user_id,
-            imei, carrier_id, carrier_name, exp_id, time)
+            imei, carrier_id2, carrier_name, exp_id, time)
 
           (key, value)
         }else{
@@ -154,6 +160,7 @@ object exp_d {
         val str2 = v.mkString(",")
         s"$str1,$str2,1"
     }.saveAsTextFile(outpath2)
+
     sc.stop()
 
   }

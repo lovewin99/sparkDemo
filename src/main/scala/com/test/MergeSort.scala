@@ -6,6 +6,7 @@ package com.test
 import org.apache.spark._
 
 object MergeSort extends App {
+
   val oldList = List[Int](12, 40, 26, 89, 75, 44, 32, 65, 18)
   val list = mergeSort(oldList)
   println(list)

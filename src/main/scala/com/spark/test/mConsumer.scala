@@ -134,7 +134,7 @@ object mConsumer {
 /**
  * `spark-submit --master spark://master2:7077 --class com.spark.Producer sparkdemo_2.10-1.0.jar  master2:9092 test21 10000 100`
  */
-object Producer1 {
+object Producer2 {
   def main (args: Array[String]) {
     if (args.length < 4) {
       System.err.println("Usage: KafkaWordCountProducer <metadataBrokerList> <topic> " +
