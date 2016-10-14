@@ -56,7 +56,7 @@ object ImplicitCase extends App{
 
   //-------------------------------------------------------
   //基础隐式转换
-  def func1(n: String): Unit ={
+  def func1(n: String): Unit = {
     println(n)
   }
   implicit def xxx(n: Int) = n.toString
