@@ -6,6 +6,7 @@ import org.apache.spark.{SparkContext, SparkConf}
 import scala.collection.mutable.ListBuffer
 
 /**
+ *
  * Created by wangxy on 16-5-5.
  */
 object MyPathTest1 {

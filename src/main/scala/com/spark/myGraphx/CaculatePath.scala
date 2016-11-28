@@ -65,7 +65,7 @@ object CaculatePath {
     }
 
 //    val kk = g.pregel(List("x"),Int.MaxValue,EdgeDirection.Out)(vp,sm,mm)
-
+//
 //    println(kk.vertices.collect.mkString("\n"))
 
     sc.stop

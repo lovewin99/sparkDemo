@@ -10,7 +10,7 @@ import org.apache.spark.rdd.RDD
   * Created by wq on 16/4/16.
   */
 object MapReduceTripletsDemo {
-
+/**
   def main(args: Array[String]) {
     val conf = new SparkConf()
     val sc = new SparkContext("local", "MapReduceTripletsDemo", conf)
@@ -105,5 +105,5 @@ object MapReduceTripletsDemo {
     kankan.collect.foreach(println(_))
 
   }
-
+*/
 }

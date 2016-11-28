@@ -13,9 +13,12 @@ object sparklocal {
     val conf = new SparkConf()
     val sc = new SparkContext("local", "sparklocal", conf)
 
-    val rdd = sc.textFile("/home/wangxy/data/hallo.txt").coalesce(30)
+    val rdd = sc.parallelize(Seq(1,2,3,4))
+    rdd.collect().foreach(println)
 
-    rdd.flatMap(_.split(" ")).map((_, 1)).reduceByKey(_+_).saveAsTextFile("/home/wangxy/testsv1/")
+//    val rdd = sc.textFile("/home/wangxy/data/hallo.txt").coalesce(30)
+
+//    rdd.flatMap(_.split(" ")).map((_, 1)).reduceByKey(_+_).collect().foreach(println)
 
   }
 

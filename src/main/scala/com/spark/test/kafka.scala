@@ -298,7 +298,7 @@ object Consumer {
 
       //      results.save("bao/kafka/output", SaveMode.Append)
 
-      results.save("bao/kafka/output/", SaveMode.Append)
+//      results.save("bao/kafka/output/", SaveMode.Append)
     }
 
     ssc.start()

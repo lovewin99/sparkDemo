@@ -5,6 +5,7 @@ import org.apache.spark.streaming.{Seconds, StreamingContext}
 import org.apache.spark.streaming.kafka.KafkaUtils
 
 /**
+ *
  * Created by wangxy on 16-5-24.
  */
 object sscMtopic {
